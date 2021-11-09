@@ -1,0 +1,92 @@
+body{
+
+         background-image: url("fons.jpg");
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         background-position: center center;
+         font-family: arial, helvetica;
+     }
+
+nav{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 100%;
+    max-width:800px;
+    margin: auto;
+}
+nav a{
+    text-decoration:none;
+    color:#F0D7D1;
+    padding:20px;
+    display:block;}
+
+nav li{
+    display:inline-block;
+    text-align:center;
+    display:inline-block;
+    width:20x;
+    height:px;
+    padding:;
+    text-align:center;
+    color:#fff;
+    position:relative;
+}
+
+nav li:hover{
+    background-color:#ef8354;
+}
+
+nav li ul li{
+    background: #092327;
+    width:100px;
+}
+
+nav li>ul{
+    display:none;
+}
+
+nav li:hover>ul{
+    display:block;
+    position:absolute;
+    top:58px;
+    left:-40px;
+}
+
+
+background-image: url("fons.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    font-family: arial, helvetica;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 100%;
+    max-width: 710px;
+    margin: auto
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background: #ef8354;
+
+}
+
+
