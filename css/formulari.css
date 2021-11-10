@@ -1,6 +1,6 @@
 body{
 
-    background-image: url("Fotos/fons.jpg");
+    background-image: url("../Fotos/fons.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -26,9 +26,6 @@ nav li{
     display:inline-block;
     text-align:center;
     display:inline-block;
-    width:20x;
-    height:px;
-    padding:;
     text-align:center;
     color:#fff;
     position:relative;
@@ -53,7 +50,6 @@ nav li:hover>ul{
     top:58px;
     left:-40px;
 }
-
 
 
 .formulario{
