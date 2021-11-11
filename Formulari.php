@@ -32,7 +32,7 @@
 
 
     <section>
-        <form method="POST" /*action="registrar.php" onsubmit="return confirmaRegistre();" class="formulario"*/>
+        <form method="POST" /*action="/../MODEL/m_registrar.php" onsubmit="return confirmaRegistre();" class="formulario"*/>
 
             <h1>Registra't</h1>
             <div id ="contenidor">
@@ -51,15 +51,15 @@
                 </div>
                 <div class="input-contenedor">
                     <i class="fas fa-map-marker-alt"></i>
-                    <input type="text"  name="adreça" maxlength="30" minlength="1" placeholder="Adreça" required>
+                    <input type="text"  name="adreca" maxlength="30" minlength="1" placeholder="Adreça" required>
                 </div>
                 <div class="input-contenedor">
                     <i class="fas fa-location-arrow"></i>
-                    <input type="text" name="població" maxlength="30" minlength="1" placeholder="Població" required>
+                    <input type="text" name="poblacio" maxlength="30" minlength="1" placeholder="Població" required>
                 </div>
                 <div class="input-contenedor">
                     <i class="fas fa-mail-bulk"></i>
-                    <input type="text" name="codi postal" maxlenght="5" minleght="5" pattern="^[0-9]+$" placeholder="Codi postal">
+                    <input type="text" name="codi_postal" maxlenght="5" minleght="5" pattern="^[0-9]+$" placeholder="Codi postal">
                 </div>
 
                 <input type="submit" name="register" value="Registrar-me" class="button"/>
@@ -67,7 +67,9 @@
             </div>
         </form>
         <?php
-            require_once__DIR__ . "/../MODEL/m_registrar.php";
+            if(isset($_POST['nom']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['adreca']) && isset($_POST['poblacio']) && isset($_POST['codi_postal'])) {
+                require_once __DIR__ . "/MODEL/m_registrar.php";
+            }
         ?>
     </section>
 
