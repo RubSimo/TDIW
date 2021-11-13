@@ -1,7 +1,3 @@
 <?php
-    require_once __DIR__ . "/../MODEL/connectaBD.php";
-    require_once __DIR__ . "/../MODEL/m_registrar.php";
-
-    $connexio = connectaBD();
-    enregistrarDades($connexio);
+    require_once  __DIR__ . '/../VISTA/v_registrar.php';
 ?>

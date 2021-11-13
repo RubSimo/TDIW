@@ -1,38 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ERSC sneakers</title>
-    <link rel="stylesheet" type ="text/css" href="css/formulari.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <script src ="formulari.js"></script>
-
-</head>
-<body>
-
-<header>
-    <nav class="menu"><ul>
-        <li><a href="index.html">Inici</a></li>
-        <li><a href="Formulari.php">Registrar-se</a></li>
-        <li><a href="iniciarSessio.html">Iniciar sessió</a></li>
-        <li><a href="index.html">Marques</a>
-            <ul><li><a href="index.html">Nike</a></li>
-                <li><a href="index.html">Adidas</a></li>
-                <li><a href="index.html">Vans</a></li>
-                <li><a href="index.html">Jordan</a></li></ul>
-        </li>
-        <li><a href="talles.html">Talles</a></li>
-        <li><a href="index.html">Ajuda</a></li>
-        <li><a href="index.html">Carrito</a></li>
-    </ul></nav>
-
-</header>
-
 <div id="d1">
 
 
     <section>
-        <form method="POST" /*action="/../MODEL/m_registrar.php" onsubmit="return confirmaRegistre();" class="formulario"*/>
+        <form onsubmit="return confirmaRegistre();" action="index.php?accio=crearUsuari" target="_self" method="post" class = "formulario" >
 
             <h1>Registra't</h1>
             <div id ="contenidor">
@@ -63,17 +33,9 @@
                 </div>
 
                 <input type="submit" name="register" value="Registrar-me" class="button"/>
-
             </div>
         </form>
-        <?php
-            if(isset($_POST['nom']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['adreca']) && isset($_POST['poblacio']) && isset($_POST['codi_postal'])) {
-                require_once __DIR__ . "/MODEL/m_registrar.php";
-            }
-        ?>
-    </section>
 
+    </section>
 </div>
 
-</body>
-</html>

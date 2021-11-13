@@ -51,8 +51,7 @@ nav li:hover>ul{
     left:-40px;
 }
 
-
-
+/* --------------Formulario------------------- */
 .formulario{
     display:block;
     margin:auto;
@@ -111,3 +110,47 @@ input[type="text"],[type="password"],[type="email"]{
     cursor: pointer;
 }
 
+
+/* --------------Talles------------------- */
+
+.guia{
+    text-align: center;
+    display:block;
+    margin:auto;
+}
+
+.guia {
+    box-sizing: content-box;
+    width: 70%;
+    border: solid #5B6DCD 10px;
+    padding: 5px;
+}
+
+.guia{
+    background: white;
+    margin-top: 25px;
+    padding: 3px;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+p{
+    width: 80%;
+    text-align: center;
+    display:block;
+    margin:auto;
+}
+
+/*------------------Productos----------------------*/
+
+.fotos{
+    padding:10px;
+    margin:10px;
+    border:2px solid black;
+    float:left;
+    width:250px;
+}
