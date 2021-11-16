@@ -8,7 +8,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
 
-    <body class="c_inici">
+    <body class="categories">
         <header>
             <?php require __DIR__ . '/CONTROLADOR/c_header.php';?>
         </header>

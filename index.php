@@ -10,12 +10,12 @@ switch ($accio){
         include __DIR__ . '/registrar.php';
         break;
 
-    case 'iniciar':
-        include __DIR__ . '/iniciar.php';
-        break;
-
     case 'crearUsuari':
         include __DIR__ . '/crearUsuari.php';
+        break;
+
+    case 'iniciar':
+        include __DIR__ . '/iniciar.php';
         break;
 
     case 'marques':
@@ -32,6 +32,14 @@ switch ($accio){
 
     case 'carrito':
         include __DIR__ . '/carrito.php';
+        break;
+
+    case 'getProductes':
+        include __DIR__ . '/productes.php';
+        break;
+
+    case 'veureProducte':
+        include __DIR__ . '/producteDetail.php';
         break;
 
     default:

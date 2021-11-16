@@ -4,7 +4,7 @@
     require_once  __DIR__ . '/../MODEL/m_productes.php';
 
     $id_categoria = $_GET['id_categoria'] ?? NULL;
-    $productes = getProductes($connexio, $id_categoria);
+    $Productes = getProductes($connexio, $id_categoria);
 
     include __DIR__ . '/../VISTA/v_productes.php';
 

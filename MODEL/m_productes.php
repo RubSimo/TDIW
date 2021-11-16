@@ -14,4 +14,19 @@
 
     return $producte;
     }
+
+    function getDetail($connexio, $id_producte){
+
+        try{
+            $idProducte = $id_producte;
+            $getDetail = $connexio->prepare('SELECT * FROM productes WHERE id_producte =:id_producte');
+            $getDetail->bindValue('id_producte', $idProducte);
+            $getDetail->execute();
+            $m_detail = $getDetail->fetchAll(PDO::FETCH_ASSOC);
+        }catch (PDOException $e){
+            echo "Error: " . $e->getMessage();
+        }
+        return ($m_detail);
+
+    }
 ?>

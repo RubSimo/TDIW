@@ -5,10 +5,10 @@
 
             <div class="list_cat">
                 <li>
-                    <h2><?php $categoria['nom'] = htmlspecialchars($categoria['nom']);
-                        echo $categoria['nom']; ?>
+                   <h2><?php //$categoria['nom'] = htmlspecialchars($categoria['nom']);
+                        //echo $categoria['nom']; ?>
                     </h2>
-                    <img src="<?php echo $categoria['img']; ?>" onclick="productes(<?php echo $auxID; ?>)"/>
+                    <img src="<?php echo $categoria['img']; ?>" onclick="v_productes(<?php echo $auxID; ?>)"/>
 
                 </li>
             </div>
@@ -16,8 +16,8 @@
     </div>
 
     <script>
-        function productes(id){
-            $('.categoria').load('index.php?accio=getProductes&id_categoria='+id);
+        function v_productes(id){
+            $('.categories').load('index.php?accio=getProductes&id_categoria='+id);
         }
     </script>
 </div>
