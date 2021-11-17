@@ -8,7 +8,7 @@
                    <h2><?php //$categoria['nom'] = htmlspecialchars($categoria['nom']);
                         //echo $categoria['nom']; ?>
                     </h2>
-                    <img src="<?php echo $categoria['img']; ?>" onclick="v_productes(<?php echo $auxID; ?>)"/>
+                    <img class="foto_categoria" src="<?php echo $categoria['img']; ?>" onclick="v_productes(<?php echo $auxID; ?>)"/>
 
                 </li>
             </div>
@@ -20,4 +20,5 @@
             $('.categories').load('index.php?accio=getProductes&id_categoria='+id);
         }
     </script>
+
 </div>

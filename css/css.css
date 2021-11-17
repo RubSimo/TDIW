@@ -51,6 +51,10 @@ nav li:hover>ul{
     left:-40px;
 }
 
+li{
+   list-style: none;
+}
+
 /* --------------Formulario------------------- */
 .formulario{
     display:block;
@@ -153,4 +157,17 @@ p{
     border:2px solid black;
     float:left;
     width:250px;
+}
+
+.foto_descripcio{
+    padding:10px;
+    margin:10px;
+    border:2px solid black;
+}
+
+.foto_categoria{
+    padding:10px;
+    margin:10px;
+    border:2px solid black;
+    cursor: pointer;
 }

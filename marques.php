@@ -8,18 +8,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body class="c_inici">
-<header>
-    <?php require __DIR__ . '/CONTROLADOR/c_header.php';?>
-</header>
+<body class="marques">
+<div class="Pproducte">
+    <header>
+        <?php require __DIR__ . '/CONTROLADOR/c_header.php';?>
+    </header>
 
-<div class = "inici">
-    <?php require __DIR__ . '/CONTROLADOR/c_categories.php';?>
-</div>
+    <div class = "inici">
+        <?php require __DIR__ . '/CONTROLADOR/c_categories.php';?>
+    </div>
 
-<footer class="peu">
-    <?php require __DIR__ . '/CONTROLADOR/c_footer.php';?>
-</footer>
+    <footer class="peu">
+        <?php require __DIR__ . '/CONTROLADOR/c_footer.php';?>
+    </footer>
 
 </body>
+</div>
 </html>

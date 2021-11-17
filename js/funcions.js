@@ -4,3 +4,4 @@ function confirmaRegistre(){
     console.log("registre confirmat!");
     return false;
 }
+

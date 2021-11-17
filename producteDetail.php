@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Marques</title>
+    <title>Descripció</title>
     <link rel="stylesheet" type ="text/css" href="css/css.css">
     <script type="text/javascript" src="js/funcions.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

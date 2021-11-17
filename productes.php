@@ -8,8 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body class="productes">
-<div class = "productes">
+<body>
+<div class = "Pproductes">
 
 <header>
     <?php require __DIR__ . '/CONTROLADOR/c_header.php';?>
@@ -26,3 +26,4 @@
 </div>
 </body>
 </html>
+

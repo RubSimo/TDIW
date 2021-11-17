@@ -1,25 +1,21 @@
 <div class= "guia">
-    <div class="productes">
+    <div class="products">
         <ul>
-            <?php foreach ($Productes as $productes): ?>
-
+           <?php foreach ($Productes as $p){ ?>
+            <?php $auxID = $p['id_producte']; ?>
                 <div class="list_prod">
                     <li>
-                        <img class="fotos" src="<?php echo $productes['img']; ?>">
-
-                        <div class="text">
-                            <h2> <?php echo $productes['nom']; ?> </h2>
-                            <h2> <?php echo $productes['preu']; ?> </h2>
-                            <button class="button" onclick="veureDetail(<?php $productes['id_producte'] ?>)">Descripció</button>
-                        </div>
+                        <img class="fotos" src="<?php echo $p['img']; ?>">
+                        <h2> <?php echo $p['nom']; ?> </h2>
+                        <h2> <?php echo $p['preu']; ?> </h2>
+                        <button class="button" onclick="$('.Pproductes').load('index.php?accio=veureProducte&id_producte='+(<?php echo $auxID ?>));"> Descripció </button>
                     </li>
                 </div>
-            <?php endforeach;?>
+            <?php }?>
         </ul>
     </div>
 <script>
-    function veureDetail(id){
-    $('.productes').load('index.php?accio=veureProducte&id_producte='+id)
-}
-    </script>
+    //function veureDetall(id){
+     // $('.Pproductes').load('index.php?accio=veureProducte&id_producte='+id);}
+</script>
 </div>
